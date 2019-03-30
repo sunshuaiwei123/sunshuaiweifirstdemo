@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" value="" placeholder="请输入邮箱">
+<input type="password" value=""placeholder="请输入密码">
+<button onclick="btn()">注册</button>
+<script>
+  var mail= document.getElementsByTagName("input")[0];
+  var pass=document.getElementsByTagName("input")[1];
+  function btn() {
+      if (mail.value == ""){
+          alert("email不能为空");
+      } else if (mail.value.indexOf("@")==-1){
+          alert("邮箱格式不正确");
+      } else if (pass.value==""){
+          alert("密码不能为空");
+      } else {
+          alert("注册成功")
+      }
+  }
+
+
+
+</script>
+
+</body>
+</html>
